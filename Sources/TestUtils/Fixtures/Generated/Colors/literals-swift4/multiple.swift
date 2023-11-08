@@ -4,7 +4,7 @@
 #if os(macOS)
   import AppKit
   internal enum ColorName { }
-#elseif os(iOS) || os(tvOS) || os(watchOS)
+#elseif os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
   import UIKit
   internal enum ColorName { }
 #endif

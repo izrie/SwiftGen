@@ -3,7 +3,7 @@
 
 #if os(macOS)
   import AppKit.NSFont
-#elseif os(iOS) || os(tvOS) || os(watchOS)
+#elseif os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
   import UIKit.UIFont
 #endif
 #if canImport(SwiftUI)
@@ -72,7 +72,7 @@ public struct FontConvertible {
 
   #if os(macOS)
   public typealias Font = NSFont
-  #elseif os(iOS) || os(tvOS) || os(watchOS)
+  #elseif os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
   public typealias Font = UIFont
   #endif
 
@@ -107,7 +107,7 @@ public struct FontConvertible {
   }
 
   fileprivate func registerIfNeeded() {
-    #if os(iOS) || os(tvOS) || os(watchOS)
+    #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
     if !UIFont.fontNames(forFamilyName: family).contains(name) {
       register()
     }

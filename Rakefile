@@ -13,7 +13,7 @@ end
 ## [ Constants ] ##############################################################
 
 POD_NAME = 'SwiftGen'
-MIN_XCODE_VERSION = 13.0
+MIN_XCODE_VERSION = 15.0
 BUILD_DIR = File.absolute_path('./.build')
 
 ## [ Build Tasks ] ############################################################

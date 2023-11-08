@@ -2,6 +2,12 @@
 
 ---
 
+## 6.6.3
+
+### Changes in core dependencies of SwiftGen
+
+* Supported visionOS
+
 ## 6.6.2
 
 ### Changes in core dependencies of SwiftGen

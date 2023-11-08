@@ -4,7 +4,7 @@
 #if os(macOS)
   import AppKit.NSColor
   internal typealias XCTColor = NSColor
-#elseif os(iOS) || os(tvOS) || os(watchOS)
+#elseif os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
   import UIKit.UIColor
   internal typealias XCTColor = UIColor
 #endif
