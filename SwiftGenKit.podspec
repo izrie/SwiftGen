@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.4.0'
 
   s.source = {
-    git: 'https://github.com/SwiftGen/SwiftGenKit.git',
+    git: 'https://github.com/izrie/SwiftGenKit.git',
     tag: s.version.to_s
   }
   s.source_files = 'Sources/SwiftGenKit/**/*.swift'
